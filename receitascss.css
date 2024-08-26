@@ -1,0 +1,178 @@
+@charset "utf8";
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CL:wght@100..400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CL:wght@100..400&family=Roboto+Slab:wght@100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor01: #f3e6d3;
+    --cor02: #F4C569;
+    --cor03: #D8753E;
+    --cor04: #d76664e1;
+    --cor05: #DA5131;
+    --cor06: #b07a0d;
+
+    --fontprincipal: normal 400 1.7em "Roboto Slab", serif;
+    --fontcursiva: normal 200 1em "Playwrite CL", cursive;
+    --fontpadrao: normal normal 1em Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--cor01);
+    font: var(--fontpadrao);
+}
+
+header {
+    background-image: linear-gradient(to top, var(--cor05), var(--cor02));
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.256);
+}
+
+nav {
+    background-color: var(--cor05);
+    text-align: center;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.219);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--cor01);
+    padding: 5px 5px 0px 5px;
+}
+
+nav img {
+    border-radius: 0%;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    background-color: var(--cor01);
+    color: var(--cor06);
+    border-radius: 3px;
+    transition-duration: 0.5s;
+}
+
+main {
+    margin: auto;
+    margin-bottom: 40px;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: white;
+    min-width: 400px;
+    max-width: 700px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.308);
+    text-align: justify;
+}
+
+aside {
+    margin: 15px auto;
+    text-align: center;
+    background-color: var(--cor01);
+    width: 500px;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.24);
+}
+
+footer {
+    background-image: linear-gradient(to right, var(--cor05), var(--cor02));
+    text-align: center;
+    color: var(--cor01);
+}
+
+div {
+    text-align: center;
+}
+
+img {
+    border-radius: 30%;
+}
+
+a {
+    text-decoration: none;
+    color: #b07a0d;
+}
+
+p {
+    text-indent: 15px;
+}
+
+h1 {
+    text-align: center;
+    font: var(--fontprincipal);
+    margin-bottom: 8px;
+}
+
+h2 {
+    font: var(--fontcursiva);
+    background-image: linear-gradient(to right, var(--cor06), transparent);
+    color: var(--cor01);
+    padding: 0px 8px;
+    margin: 10px 0px;
+}
+
+h3 {
+    background-color: var(--cor06);
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 8px;
+}
+
+h4 {
+    margin: 10px;
+}
+
+ul {
+    background-color: var(--cor01);
+    list-style-position: inside;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+ol {
+    background-color: var(--cor01);
+    list-style-position: inside;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.quadrado {
+    border-radius: 20px;
+}
+
+.zoom:hover {
+    border-radius: 10px;
+    width: 255px;
+    transition-duration: 0.4s;
+}
+
+.centro {
+    text-align: center;
+}
+
+.video {
+    background-color: #b07a0d;
+    margin: 20px -10px;
+    padding: 10px;
+    padding-bottom: 5%;
+    position: relative;
+}
+
+.video > frame {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 100%;
+    height: 100%;
+}
